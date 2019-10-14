@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+</head>
+
+<body>
+	<div>
+		<h5>
+			Monthly Payment:
+			<p th:text="${result}"></p>
+		</h5>
+		<h5>
+			Purchase Price:
+			<p th:text="${inputData.purchasePrice}"></p>
+		</h5>
+		<h5>
+			Deposit:
+			<p th:text="${inputData.deposit}"></p>
+		</h5>
+		<h5>
+			Bond Term in Years:
+			<p th:text="${inputData.bondTermYears}"></p>
+		</h5>
+		<h5>
+			Fixed Interest Rate:
+			<p th:text="${inputData.fixedInterestRate}"></p>
+		</h5>
+	</div>
+</body>
+</html>

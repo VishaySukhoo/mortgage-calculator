@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+</head>
+
+<body>
+<div th:switch="${loans}">
+    <h2 th:case="null">No calculations yet</h2>
+        <div th:case="*">
+	<table>
+				<thead>
+					<tr>
+						<th>MonthlyPayment</th>
+						<th>purchasePrice</th>
+						<th>deposit</th>
+						<th>bondTermYears</th>
+						<th>fixedInterestRate</th>
+						<th>name</th>
+					
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="loan : ${loans}">
+						<td th:text="${loan.monthlyPayment}"></td>
+						<td th:text="${loan.purchasePrice}"></td>
+						<td th:text="${loan.deposit}"></td>
+						<td th:text="${loan.bondTermYears}"></td>
+						<td th:text="${loan.fixedInterestRate}"></td>
+						<td th:text="${loan.name}"></td>
+						
+
+					</tr>
+				</tbody>
+			</table>
+			</div>
+</div>
+</body>
+</html>
