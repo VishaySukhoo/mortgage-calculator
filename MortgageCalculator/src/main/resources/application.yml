@@ -1,6 +1,6 @@
 server:
-  port: 1997
-  
+  port: 1996
+
 logging:
   level:
     com.example.demo: INFO
