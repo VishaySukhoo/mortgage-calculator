@@ -11,12 +11,12 @@
 	<table>
 				<thead>
 					<tr>
-						<th>MonthlyPayment</th>
-						<th>purchasePrice</th>
-						<th>deposit</th>
-						<th>bondTermYears</th>
-						<th>fixedInterestRate</th>
-						<th>name</th>
+						<th>Monthly Payment</th>
+						<th>Purchase Price</th>
+						<th>Deposit</th>
+						<th>BondTermYears</th>
+						<th>Fixed Interest Rate</th>
+						<th>Name</th>
 					
 
 					</tr>
@@ -43,20 +43,20 @@
 				Name: <input type="text" th:field="*{name}" />
 			</p>
 			<p>
-				purchasePrice: <input type="text" th:field="*{purchasePrice}" />
+				Purchase Price / Principal: <input type="text" th:field="*{purchasePrice}" />
 			</p>
 			<p>
-				deposit: <input type="text" th:field="*{deposit}" />
+				Deposit: <input type="text" th:field="*{deposit}" />
 			</p>
 			<p>
-				bondTermYears: <input type="text" th:field="*{bondTermYears}" />
+				Bond Term Years: <input type="text" th:field="*{bondTermYears}" />
 			</p>
 			<p>
-				fixedInterestRate: <input type="text"
+				Fixed Interest Rate: <input type="text"
 					th:field="*{fixedInterestRate}" />
 			</p>
 			<p>
-				<input type="submit" value="Submit" /> <input type="reset"
+				<input type="submit" value="Calculate" /> <input type="reset"
 					value="Reset" />
 			</p>
 		</form>
